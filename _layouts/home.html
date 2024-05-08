@@ -10,7 +10,10 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <img src="{{ site.profile_picture | relative_url }}" alt="Profile Picture">
+    <div style="text-align: center;">
+      <img src="{{ site.profile_picture | relative_url }}" alt="Profile Picture" style="margin-bottom: 10px;">
+      <p>Write your text here</p>
+    </div>
 
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
