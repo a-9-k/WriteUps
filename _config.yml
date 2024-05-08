@@ -47,6 +47,9 @@ author: Akram Belekhelef
 # Copyright 
 copyright: "A1001K's Blog"
 
+# Logo image /images/logo.png
+logo: /images/logo.png
+
 # Build settings
 #theme: minima
 plugins:
