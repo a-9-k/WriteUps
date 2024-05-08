@@ -32,6 +32,10 @@ github_username:  a1001k
 
 # Author
 author: Akram Belekhelef
+
+# Copyright 
+copyright: "A1001K's Blog"
+
 # Build settings
 #theme: minima
 plugins:
