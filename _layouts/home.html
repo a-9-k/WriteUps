@@ -9,12 +9,12 @@ layout: default
   
     <!-- Profile picture -->
 
-  <div style="text-align: center;">
-    <img src="{{ site.profile_picture | relative_url }}" alt="Profile Picture" style="margin-bottom: 10px; border-radius: 50%;">
-    <h2>A1001K</h2>
-  </div>
-  <h1 style="text-align: center; font-size: 15px;">Write your text here</h1>
-  
+    <div style="text-align: center;">
+      <img src="{{ site.profile_picture | relative_url }}" alt="Profile Picture" style="margin-bottom: 10px; border-radius: 50%; width: 150px; height: 150px;">
+      <h2>A1001K</h2>
+    </div>
+    <p>Write your text here</p>
+      
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
