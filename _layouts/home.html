@@ -7,14 +7,18 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <!-- Profile picture -->
+  <div class="profile-picture">
+    <img src="/images/title-logo.png" alt="Your Name">
+    <h2>A1001K</h2>
+  </div>
+
+  <!-- Text below profile picture -->
+  <p>Some text about you.</p>
+
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <div style="text-align: center;">
-      <img src="{{ site.profile_picture | relative_url }}" alt="Profile Picture" style="margin-bottom: 10px;">
-      <p>Write your text here</p>
-    </div>
-
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -33,7 +37,7 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">Me</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">a9k</a></p>
   {%- endif -%}
 
 </div>
