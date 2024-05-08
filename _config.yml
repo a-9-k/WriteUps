@@ -50,6 +50,8 @@ copyright: "A1001K's Blog"
 # Logo image /images/title-logo.png
 title-logo: /images/title-logo.png
 
+
+profile_picture: /images/title-logo.png
 # Build settings
 #theme: minima
 plugins:
