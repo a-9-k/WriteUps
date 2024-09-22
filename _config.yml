@@ -1,6 +1,6 @@
 
 title: A1001k
-email: A9@gmail.com
+email: akramzifou19@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   
 baseurl: "/WriteUps" # the subpath of your site, e.g. /blog
@@ -11,7 +11,7 @@ twitter_username: a1001k
 github_username:  a-9-k
 displayed_github_name: Github
 
-linkedin_username: akram-belekhelef-ab5313241
+linkedin_username: akram-houssem-eddine-belekhelef-ab5313241
 displayed_linkedin_name: Linkedin
 
 #instagram_username: stf_akram
@@ -21,7 +21,7 @@ twitter_username: A1001K
 displayed_twitter_name: Twitter
 
 # Author
-author: Akram Belekhelef
+author: Akram Houssem Eddine Belekhelef
 
 # Copyright 
 copyright: "A1001K's Blog"
