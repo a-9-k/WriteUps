@@ -205,6 +205,7 @@ php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.
   </pre>
 </details>
 
+After we apply the PHP filter chain to the vulnerable Local File Inclusion (LFI), the reverse shell script will be downloaded to the victim machine and executed. This happens by using the curl command to fetch the shell script from our remote server, and then piping it directly into Bash for execution, giving us remote access to the target system.
 
 ```sh
 Attacker Machine 
@@ -223,7 +224,6 @@ http://10.10.237.45/secret-script.php?file=PHP-FILTER-CHAIN'Output'
 
 ![Screenshot_2](https://github.com/user-attachments/assets/b8796269-e663-4402-8c9b-cce01cc4b6c3)
 
-After we apply the PHP filter chain to the vulnerable Local File Inclusion (LFI), the reverse shell script will be downloaded to the victim machine and executed. This happens by using the curl command to fetch the shell script from our remote server, and then piping it directly into Bash for execution, giving us remote access to the target system.
 
 # Privilege escalation:
 
