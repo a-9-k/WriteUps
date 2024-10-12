@@ -2,7 +2,7 @@
 layout: post
 title:  "TryHackMe: Cheese CTF"
 description: Inspired by the great cheese talk of THM!
-date:   2024-08-10 22:53:59 +0100
+date:   2024-10-10 22:53:59 +0100
 categories: jekyll update
 ---
 
