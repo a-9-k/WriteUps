@@ -151,6 +151,8 @@ Discovered open port 1783/tcp on 10.10.10.247
 </pre>
 </details>
 
+
+
 # Directory bruteforcing:
 
 
