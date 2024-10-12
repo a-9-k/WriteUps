@@ -229,6 +229,7 @@ http://10.10.237.45/secret-script.php?file=PHP-FILTER-CHAIN'Output'
 
 After further enumeration, I discovered that I have write access to the authorized_keys file in the .ssh directory.
 
+I generated my id_rsa.pub key and added it to the authorized_keys file on the victim machine.
 ```sh
 Attacker Machine
 
@@ -241,6 +242,7 @@ Victim Machine
 
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0O0JSsJWhGHQDI1wEqoTZapMiec+9x/FzqM2Ys2+9o8U1RQEp6zHWMVzjGDFSGDSJGDJLKQSJKCJLQKb5iA+mZSagNEHIXn906gQW2/z3hpojwsDTLiEzdEPh+66q28LHFL0FuUmNvslkjmlkcdnhCKUklmdjsq?XCLMW?QLKSFJKDBSJKBdnszfjheafhjvdxqhcvbqvcygfavguvcshjwbcnsbhfsfsojfdsE7NCxFoKcl9MeMyNYPZB4WzRjXStQfF9XyuvhrI+C6VLoWiL11N2owozGhssA/1/hpEjDWJwMe0/7QcYYjTJ2IOJFDSKLNFSDHFDFSDlxWv/zINKv5EttAFyrTtO2pydh3wd5GaC8se0= kali@attacker_machine" > authorized_keys
 ```
+I changed the permissions of the id_rsa private key to ensure it's only readable and writable by me using chmod 600. After that, I used ssh -i id_rsa comte@10.10.122.229 to log into the remote machine as the user comte, authenticating with my private key.
 ```sh
 Attacker Machine
 
